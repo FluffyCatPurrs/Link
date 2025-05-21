@@ -1,0 +1,24 @@
+{{css}}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Google's font */
+  background-color: #f7f7f7; /* Soft light background */
+  color: #333; /* Soft dark text */
+  line-height: 1.5;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Header styles (for soft, clean appearance) */
+header {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center

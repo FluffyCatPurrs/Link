@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<link rel="icon" href="/favicon.jpeg" type="image/x-icon">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - AB Academy</title>
+  <script src="auth.js"></script>
+  <script>
+    window.onload = checkLogin;
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef6ff;
+      text-align: center;
+      padding: 60px;
+    }
+
+    h1 {
+      color: #3399ff;
+    }
+
+    button {
+      padding: 12px 20px;
+      margin: 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #3399ff;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #267acc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to AB Academy Dashboard</h1>
+  <button onclick="window.location.href='browser.html'">Browser</button>
+  <button onclick="window.location.href='games.html'">Games</button>
+  <button onclick="window.location.href='index.html'">Log Out</button>
+</body>
+</html>

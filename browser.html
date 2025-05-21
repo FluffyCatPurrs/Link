@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+ <link rel="icon" href="/favicon.jpeg" type="image/x-icon">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser - AB Academy</title>
+  <script src="auth.js"></script>
+  <script>
+    window.onload = checkLogin;
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef6ff;
+      text-align: center;
+      padding: 30px;
+    }
+
+    input {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin-left: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      background-color: #3399ff;
+      color: white;
+      cursor: pointer;
+    }
+
+    iframe {
+      margin-top: 30px;
+      width: 90%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Enter URL</h1>
+  <input id="urlInput" placeholder="https://example.com" />
+  <button onclick="loadSite()">Go</button>
+  <br><br>
+  <iframe id="siteFrame" style="display:none;"></iframe>
+  <button onclick="Fullscreen()">🔳 Fullscreen</button>
+
+  <script>
+    function loadSite() {
+      const url = document.getElementById("urlInput").value;
+      const iframe = document.getElementById("siteFrame");
+      iframe.src = url;
+      iframe.style.display = "block";
+
+      
+    }
+     function Fullscreen() {
+      // if (iframe.requestFullscreen) {
+      //   iframe.requestFullscreen();
+      // } else if (iframe.webkitRequestFullscreen) {
+      //   iframe.webkitRequestFullscreen();
+      // } else if (iframe.msRequestFullscreen) {
+      //   iframe.msRequestFullscreen();
+      // }
+
+      getElementById(siteFrame).requestFullscreen()
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yapperman1000 Legend</title>
+  <link rel="icon" href="/favicon.jpeg" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef6ff;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #3399ff;
+      font-size: 2.5rem;
+    }
+
+    button {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #3399ff;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #267acc;
+    }
+
+    iframe {
+      margin-top: 30px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      height: 600px;
+      max-width: 1200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Yapperman1000's Website!</h1>
+   <input id="username" placeholder="Username" /><br />
+  <input id="password" type="password" placeholder="Password" /><br />
+  <button onclick="login()">Login</button>
+
+  <script src="auth.js"></script>
+  
+  <button onclick="openFullscreen()">🔳 Fullscreen</button>
+  <button onclick="deadshot()">🚀 Open Deadshot</button>
+  
+  <iframe id="deadshotiframe" src="" style="display:none;"></iframe>
+
+  <script>
+    const iframe = document.getElementById("deadshotiframe");
+
+    function deadshot() {
+      iframe.src = "https://deadshot.io";
+      iframe.style.display = "block";
+    }
+
+    function openFullscreen() {
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>

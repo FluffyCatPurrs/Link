@@ -1,3 +1,127 @@
- <!DOCTYPE html>
- <title>Yapperman1000 Legend</title>
-  <link rel="icon" href="/favicon.jpeg" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapperman1000 Legend - Games</title>
+    <link rel="icon" href="/favicon.jpeg" type="image/x-icon">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a softer look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light pastel blue-grey */
+        }
+        .game-card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 5px 15px -5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.15), 0 8px 20px -8px rgba(0, 0, 0, 0.08);
+        }
+        .play-button {
+            background-image: linear-gradient(to right, #a78bfa, #8b5cf6); /* Soft purple gradient */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Pill shape */
+            font-weight: 600;
+            transition: background-image 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(139, 92, 246, 0.4);
+        }
+        .play-button:hover {
+            background-image: linear-gradient(to right, #8b5cf6, #6d28d9);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-400 to-indigo-500 text-white p-6 shadow-lg rounded-b-3xl">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-4xl font-extrabold tracking-tight mb-4 sm:mb-0">Yapperman1000 Legend</h1>
+          
+        </div>
+    </header>
+
+    <!-- Main Content - Games Section -->
+    <main class="flex-grow container mx-auto p-8 py-12">
+        <section class="text-center mb-12">
+            <h2 class="text-5xl font-bold text-indigo-700 mb-6 drop-shadow-sm">Welcome to Our Game Zone!</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Discover a collection of fun and engaging games. Pick your favorite and start playing!
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Game Card 1: Tic-Tac-Toe -->
+            <div class="game-card p-8 flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x150/e0e7ff/6366f1?text=Tic-Tac-Toe" alt="Tic-Tac-Toe Game Icon" class="w-36 h-36 rounded-full mb-6 object-cover shadow-md">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Tic-Tac-Toe</h3>
+                <p class="text-gray-600 mb-6 text-lg">
+                    A classic paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid.
+                </p>
+                <button class="play-button focus:outline-none focus:ring-4 focus:ring-purple-300">Play Game</button>
+            </div>
+
+            <!-- Game Card 2: Pong -->
+            <div class="game-card p-8 flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x150/ffe4e6/dc2626?text=Pong" alt="Pong Game Icon" class="w-36 h-36 rounded-full mb-6 object-cover shadow-md">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Pong</h3>
+                <p class="text-gray-600 mb-6 text-lg">
+                    One of the earliest arcade video games, a two-dimensional sports game that simulates table tennis.
+                </p>
+                <button class="play-button focus:outline-none focus:ring-4 focus:ring-purple-300">Play Game</button>
+            </div>
+
+            <!-- Game Card 3: Snake -->
+            <div class="game-card p-8 flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x150/dcfce7/16a34a?text=Snake" alt="Snake Game Icon" class="w-36 h-36 rounded-full mb-6 object-cover shadow-md">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Snake</h3>
+                <p class="text-gray-600 mb-6 text-lg">
+                    A game where the player maneuvers a line that grows in length, resembling a snake, as it picks up food.
+                </p>
+                <button class="play-button focus:outline-none focus:ring-4 focus:ring-purple-300">Play Game</button>
+            </div>
+
+            <!-- Game Card 4: Memory Match -->
+            <div class="game-card p-8 flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x150/fff5e0/f59e0b?text=Memory" alt="Memory Match Game Icon" class="w-36 h-36 rounded-full mb-6 object-cover shadow-md">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Memory Match</h3>
+                <p class="text-gray-600 mb-6 text-lg">
+                    Test your memory by flipping cards and finding matching pairs. A fun challenge for all ages!
+                </p>
+                <button class="play-button focus:outline-none focus:ring-4 focus:ring-purple-300">Play Game</button>
+            </div>
+
+            <!-- Game Card 5: Whack-A-Mole -->
+            <div class="game-card p-8 flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x150/e0f2fe/38bdf8?text=Whack-A-Mole" alt="Whack-A-Mole Game Icon" class="w-36 h-36 rounded-full mb-6 object-cover shadow-md">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Whack-A-Mole</h3>
+                <p class="text-gray-600 mb-6 text-lg">
+                    A fast-paced arcade classic! Hit the moles as they pop up to score points.
+                </p>
+                <button class="play-button focus:outline-none focus:ring-4 focus:ring-purple-300">Play Game</button>
+            </div>
+
+            <!-- Game Card 6: Tetris -->
+            <div class="game-card p-8 flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x150/fee2e2/ef4444?text=Tetris" alt="Tetris Game Icon" class="w-36 h-36 rounded-full mb-6 object-cover shadow-md">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Tetris</h3>
+                <p class="text-gray-600 mb-6 text-lg">
+                    Arrange falling blocks to form complete lines and clear them from the board. A timeless puzzle game.
+                </p>
+                <button class="play-button focus:outline-none focus:ring-4 focus:ring-purple-300">Play Game</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center rounded-t-3xl mt-12">
+        <p>&copy; 2025 Yapperman1000 Legend. All rights reserved.</p>
+    </footer>
+</body>
+</html>
